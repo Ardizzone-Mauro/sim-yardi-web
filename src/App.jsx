@@ -140,7 +140,7 @@ export default function App() {
             <div className="hero-visual">
               <div className="hero-image-shell">
                 <img
-                  src="/assets/sim-yardi-neonatal.jpg"
+                  src={`${import.meta.env.BASE_URL}assets/sim-yardi-neonatal.jpg`}
                   alt="SIM-YArdi en configuración neonatal"
                   fetchPriority="high"
                   decoding="async"
@@ -304,23 +304,25 @@ export default function App() {
             <div className="gallery-grid">
               <figure className="gallery-large">
                 <img
-                  src="/assets/sim-yardi-modular.jpg"
+                  src={`${import.meta.env.BASE_URL}assets/sim-yardi-modular.jpg`}
                   alt="Sistema modular SIM-YArdi"
                   loading="lazy"
                   decoding="async"
                 />
               </figure>
+
               <figure>
                 <img
-                  src="/assets/sim-yardi-componentes.jpg"
+                  src={`${import.meta.env.BASE_URL}assets/sim-yardi-componentes.jpg`}
                   alt="Componentes del sistema SIM-YArdi"
                   loading="lazy"
                   decoding="async"
                 />
               </figure>
+
               <figure>
                 <img
-                  src="/assets/sim-yardi-neonatal.jpg"
+                  src={`${import.meta.env.BASE_URL}assets/sim-yardi-neonatal.jpg`}
                   alt="Configuración neonatal SIM-YArdi"
                   loading="lazy"
                   decoding="async"

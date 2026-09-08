@@ -5,7 +5,7 @@ export default function Footer() {
         <div className="footer-brand-block">
           <div className="footer-logo-card">
             <img
-              src="/assets/sim-yardi-logo-footer.webp"
+              src={`${import.meta.env.BASE_URL}assets/sim-yardi-logo-footer.webp`}
               alt="SIM-YArdi — Hemodinamia, ventilación asistida y soporte vital avanzado"
               className="footer-logo"
               loading="lazy"
