@@ -1,0 +1,9 @@
+{
+  "name": "SIM-YArdi",
+  "short_name": "SIM-YArdi",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#071b2f",
+  "theme_color": "#071b2f",
+  "lang": "es-AR"
+}
