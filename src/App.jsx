@@ -196,7 +196,7 @@ export default function App() {
           <div className="container architecture-grid">
             <div className="architecture-image">
               <img
-                src="/assets/sim-yardi-componentes.jpg"
+                src={`${import.meta.env.BASE_URL}assets/sim-yardi-componentes.jpg`}
                 alt="Arquitectura modular y componentes del sistema SIM-YArdi"
                 loading="lazy"
                 decoding="async"
