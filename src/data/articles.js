@@ -44,4 +44,13 @@ export const articles = [
       "Presentación de la arquitectura modular y el enfoque pedagógico del proyecto ante más de 300 profesionales en SASIM.",
     image: `${import.meta.env.BASE_URL}assets/sasim-presentacion-01.jpeg`,
   },
+  {
+    id: 6,
+    category: "Alianzas académicas",
+    date: "06 Oct 2026",
+    title: "SIM-YArdi participará en las Jornadas de ECMO de la UNLP",
+    excerpt:
+      "Un espacio de demostración, capacitación e intercambio junto a colegas y especialistas en soporte vital extracorpóreo.",
+    image: `${import.meta.env.BASE_URL}assets/jornada-ecmo-unlp.jpeg`,
+  },
 ];
