@@ -278,15 +278,19 @@ export default function App() {
             <div>
               <span className="eyebrow">Principios de diseño</span>
               <h2>Más que un simulador: una plataforma de aprendizaje.</h2>
+              <p className="section-lead principles-lead">
+                SIM-YArdi no es solo un maniquí de práctica: fue concebido bajo
+                principios de ingeniería pedagógica y clínica.
+              </p>
             </div>
 
             <div className="check-list">
               {[
-                "Operación neumática autónoma para prácticas respiratorias.",
-                "Circuitos hídrico y neumático integrados para destrezas de urgencia.",
-                "Escenarios de hemodinamia y respuesta crítica.",
-                "ECMO simulado o conectado a un equipo real.",
-                "Formación interdisciplinaria en un entorno seguro.",
+                "Configuraciones adaptables: desde talleres de destreza hasta casos clínicos complejos de alta fidelidad.",
+                "Componentes independientes para facilitar mantenimiento, adaptación y reparación autónoma de cada subsistema.",
+                "Prácticas seguras, repetibles y observables, donde el error es una herramienta de aprendizaje sin riesgo para pacientes reales.",
+                "Base escalable para sumar capacidades tecnológicas o clínicas según los requerimientos de cada institución.",
+                "Formación clínica y trabajo en equipo: una plataforma pensada desde la enfermería y la medicina crítica para decisiones interdisciplinarias.",
               ].map((item) => (
                 <div className="check-item" key={item}>
                   <CheckCircle2 size={20} />
@@ -539,13 +543,11 @@ export default function App() {
             <div>
               <span className="eyebrow light">Investigación y desarrollo</span>
               <h2>
-                Un proyecto vivo, documentable y abierto a nuevas líneas de
-                trabajo.
+                Proyecto en desarrollo y validación.
               </h2>
               <p>
-                La web institucional puede convertirse en el punto central para
-                publicar avances técnicos, pruebas, papers, material docente,
-                participación en jornadas y colaboraciones.
+                Plataforma de simulación clínica modular en etapa de pruebas de
+                campo y validación con equipos de salud.
               </p>
             </div>
             <a href="#contacto" className="btn btn-primary">
@@ -560,16 +562,16 @@ export default function App() {
               <span className="eyebrow">Contacto</span>
               <h2>Conectemos instituciones, profesionales e innovación.</h2>
               <p className="section-lead">
-                Reemplazaremos estos datos por los canales oficiales cuando los
-                tengas definidos.
+                Conocé el desarrollo de SIM-YArdi y acercanos tu consulta,
+                propuesta o interés institucional.
               </p>
             </div>
 
             <div className="contact-card">
               <div className="contact-row">
                 <span>Correo</span>
-                <a href="mailto:contacto@sim-yardi.com">
-                  contacto@sim-yardi.com
+                <a href="mailto:sim.yardi@gmail.com">
+                  sim.yardi@gmail.com
                 </a>
               </div>
               <div className="contact-row">
