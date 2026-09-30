@@ -53,13 +53,4 @@ export const articles = [
       "Un espacio de demostración, capacitación e intercambio junto a colegas y especialistas en soporte vital extracorpóreo.",
     image: `${import.meta.env.BASE_URL}assets/jornada-ecmo-unlp.jpeg`,
   },
-  {
-    id: 7,
-    category: "Propiedad intelectual",
-    date: "16 Abr 2025",
-    title: "SIM-YArdi: desarrollo nacional con resguardo en el INPI",
-    excerpt:
-      "Expediente oficializado y publicaciones formales que acompañan la evolución técnica continua de la plataforma.",
-    image: `${import.meta.env.BASE_URL}assets/inpi-publicacion-sim-yardi.jpeg`,
-  },
 ];

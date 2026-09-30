@@ -479,58 +479,6 @@ export default function App() {
           </div>
         </section>
 
-        <section className="section ip-section">
-          <div className="container">
-            <SectionTitle
-              eyebrow="Propiedad intelectual · Desarrollo nacional"
-              title="Resguardo legal y evolución documentada en el INPI."
-              text="La protección de la innovación acompaña el crecimiento técnico y clínico de SIM-YArdi."
-            />
-            <div className="ip-grid">
-              <div className="ip-copy">
-                <p>
-                  El proyecto cuenta con formalización legal y protección de
-                  propiedad intelectual en el Instituto Nacional de la Propiedad
-                  Industrial (INPI), con expediente oficializado desde su origen
-                  y publicaciones formales en el Boletín Oficial.
-                </p>
-                <p>
-                  De manera continua se integran las sucesivas adiciones
-                  técnicas que amplían las capacidades de la plataforma,
-                  acompañando su desarrollo como tecnología nacional aplicada a
-                  la formación en medicina crítica.
-                </p>
-              </div>
-              <div className="ip-documents" aria-label="Documentación de propiedad intelectual de SIM-YArdi">
-                <figure>
-                  <img
-                    src={`${import.meta.env.BASE_URL}assets/inpi-boletin-portada.jpeg`}
-                    alt="Portada del Boletín de Patentes de Invención y Modelos de Utilidad del INPI"
-                    loading="lazy"
-                    decoding="async"
-                  />
-                </figure>
-                <figure>
-                  <img
-                    src={`${import.meta.env.BASE_URL}assets/inpi-codigo-patentes.jpeg`}
-                    alt="Código INID para patentes y modelos de utilidad del INPI"
-                    loading="lazy"
-                    decoding="async"
-                  />
-                </figure>
-                <figure>
-                  <img
-                    src={`${import.meta.env.BASE_URL}assets/inpi-publicacion-sim-yardi.jpeg`}
-                    alt="Publicación de la solicitud de patente de SIM-YArdi en el Boletín del INPI"
-                    loading="lazy"
-                    decoding="async"
-                  />
-                </figure>
-              </div>
-            </div>
-          </div>
-        </section>
-
         <section className="section section-dark research-section">
           <div className="container research-grid">
             <div className="research-icon">
