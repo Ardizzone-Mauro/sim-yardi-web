@@ -35,4 +35,13 @@ export const articles = [
       "Pruebas interdisciplinarias y primera conexión a un circuito de ECMO real junto al Hospital Sor María Ludovica.",
     image: `${import.meta.env.BASE_URL}assets/validacion-clinica-equipo.jpeg`,
   },
+  {
+    id: 5,
+    category: "Divulgación académica",
+    date: "19 Sep 2026",
+    title: "SIM-YArdi en el IV Congreso Argentino de Simulación",
+    excerpt:
+      "Presentación de la arquitectura modular y el enfoque pedagógico del proyecto ante más de 300 profesionales en SASIM.",
+    image: `${import.meta.env.BASE_URL}assets/sasim-presentacion-01.jpeg`,
+  },
 ];

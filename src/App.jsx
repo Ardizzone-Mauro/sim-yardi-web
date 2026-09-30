@@ -397,6 +397,47 @@ export default function App() {
           </div>
         </section>
 
+        <section className="section academic-section">
+          <div className="container academic-grid">
+            <div className="academic-gallery" aria-label="Presentación de SIM-YArdi en SASIM">
+              <img
+                className="academic-image-main"
+                src={`${import.meta.env.BASE_URL}assets/sasim-presentacion-01.jpeg`}
+                alt="Presentación de SIM-YArdi en el IV Congreso Argentino de Simulación"
+                loading="lazy"
+                decoding="async"
+              />
+              <img
+                className="academic-image-small"
+                src={`${import.meta.env.BASE_URL}assets/sasim-presentacion-02.jpeg`}
+                alt="Integrante de SIM-YArdi en el Congreso de SASIM"
+                loading="lazy"
+                decoding="async"
+              />
+              <img
+                className="academic-image-small"
+                src={`${import.meta.env.BASE_URL}assets/sasim-presentacion-03.jpeg`}
+                alt="Auditorio durante la exposición de SIM-YArdi"
+                loading="lazy"
+                decoding="async"
+              />
+            </div>
+            <div>
+              <span className="eyebrow">Divulgación académica</span>
+              <h2>SIM-YArdi en el IV Congreso Argentino de Simulación.</h2>
+              <p className="section-lead">
+                Presentamos el proyecto en el Congreso de la Sociedad Argentina
+                de Simulación (SASIM) ante más de 300 profesionales.
+              </p>
+              <p>
+                Compartimos los fundamentos de nuestra arquitectura modular y
+                el propósito de acortar la brecha entre la teoría y la práctica
+                en la medicina crítica pediátrica.
+              </p>
+            </div>
+          </div>
+        </section>
+
         <section className="section section-dark research-section">
           <div className="container research-grid">
             <div className="research-icon">
