@@ -682,53 +682,6 @@ h3 {
   grid-row: span 2;
 }
 
-.event-section {
-  background: linear-gradient(145deg, var(--navy-950), var(--navy-800));
-  color: #d7e2e9;
-}
-.event-grid {
-  display: grid;
-  grid-template-columns: 0.75fr 1.25fr;
-  gap: 70px;
-  align-items: center;
-}
-.event-poster {
-  justify-self: center;
-  max-width: 360px;
-  overflow: hidden;
-  border-radius: var(--radius-lg);
-  background: var(--navy-950);
-  box-shadow: 0 28px 70px rgba(0, 0, 0, 0.34);
-}
-.event-poster img {
-  width: 100%;
-  max-height: 560px;
-  object-fit: cover;
-  object-position: center;
-}
-.event-copy h2 {
-  color: var(--white);
-}
-.event-copy > p:not(.section-lead) {
-  color: #aabac8;
-}
-.event-details {
-  display: grid;
-  gap: 9px;
-  margin: 24px 0;
-  color: #dce8ee;
-  font-size: 14px;
-  font-weight: 700;
-}
-.event-details span::before {
-  content: "•";
-  margin-right: 9px;
-  color: var(--cyan-300);
-}
-.event-button {
-  width: fit-content;
-}
-
 .research-grid {
   display: grid;
   grid-template-columns: auto 1fr auto;
@@ -859,8 +812,7 @@ button:focus-visible {
   .evidence-grid,
   .contact-grid,
   .validation-grid,
-  .academic-grid,
-  .event-grid {
+  .academic-grid {
     grid-template-columns: 1fr;
   }
 
@@ -952,12 +904,6 @@ button:focus-visible {
   }
   .academic-gallery {
     grid-template-rows: 300px 190px;
-  }
-  .event-poster {
-    max-width: 300px;
-  }
-  .event-button {
-    width: 100%;
   }
   .feature-card {
     min-height: auto;

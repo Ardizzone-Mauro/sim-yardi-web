@@ -438,47 +438,6 @@ export default function App() {
           </div>
         </section>
 
-        <section className="section event-section">
-          <div className="container event-grid">
-            <div className="event-poster">
-              <img
-                src={`${import.meta.env.BASE_URL}assets/jornada-ecmo-unlp.jpeg`}
-                alt="Jornada Interinstitucional de ECMO en la Facultad de Ciencias Médicas de la UNLP"
-                loading="lazy"
-                decoding="async"
-              />
-            </div>
-            <div className="event-copy">
-              <span className="eyebrow light">Alianzas académicas</span>
-              <h2>Próxima participación en las Jornadas de ECMO de la UNLP.</h2>
-              <p className="section-lead inverse-text">
-                A partir de las pruebas de validación, fuimos invitados a
-                participar con un espacio de demostración en la Facultad de
-                Ciencias Médicas de la Universidad Nacional de La Plata.
-              </p>
-              <p>
-                Continuaremos testeando el sistema junto a colegas y
-                especialistas. La jornada propone un espacio de actualización,
-                capacitación e intercambio sobre indicaciones, fundamentos y
-                aplicaciones de ECMO en escenarios de alta complejidad.
-              </p>
-              <div className="event-details">
-                <span>Martes 6 de octubre de 2026 · 08:00 a 16:40 h</span>
-                <span>Aula Magna · Facultad de Ciencias Médicas UNLP</span>
-                <span>Actividad gratuita · Cupos limitados · Preinscripción previa</span>
-              </div>
-              <a
-                className="btn btn-primary event-button"
-                href="https://forms.gle/Fiee1bJwbtCUZxZJ9"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Preinscribirme a la jornada <ArrowRight size={18} />
-              </a>
-            </div>
-          </div>
-        </section>
-
         <section className="section section-dark research-section">
           <div className="container research-grid">
             <div className="research-icon">
