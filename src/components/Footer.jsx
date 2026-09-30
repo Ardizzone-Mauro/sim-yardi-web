@@ -25,7 +25,7 @@ export default function Footer() {
         </div>
         <div>
           <span className="footer-label">Contacto</span>
-          <a href="mailto:sim.yardi@gmail.com">sim.yardi@gmail.com</a>
+          <a href="mailto:contacto@sim-yardi.com">contacto@sim-yardi.com</a>
           <span>Argentina</span>
         </div>
       </div>
