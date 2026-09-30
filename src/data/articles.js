@@ -26,13 +26,4 @@ export const articles = [
       "Decisiones de diseño para acompañar escenarios neonatales, pediátricos y adultos.",
     image: `${import.meta.env.BASE_URL}assets/sim-yardi-modular.jpg`,
   },
-  {
-    id: 4,
-    category: "Validación clínica",
-    date: "19 Sep 2026",
-    title: "SIM-YArdi inicia su proceso de co-evaluación clínica",
-    excerpt:
-      "Pruebas interdisciplinarias y primera conexión a un circuito de ECMO real junto al Hospital Sor María Ludovica.",
-    image: `${import.meta.env.BASE_URL}assets/validacion-clinica-equipo.jpeg`,
-  },
 ];

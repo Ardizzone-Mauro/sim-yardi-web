@@ -5,7 +5,6 @@ const links = [
   ["#proyecto", "Proyecto"],
   ["#arquitectura", "Arquitectura"],
   ["#aplicaciones", "Aplicaciones"],
-  ["#investigacion", "Validación"],
   ["#publicaciones", "Publicaciones"],
   ["#galeria", "Galería"],
   ["#contacto", "Contacto"],
