@@ -1,15 +1,15 @@
 import {
   Activity,
   Blocks,
-  BrainCircuit,
   CheckCircle2,
   HeartPulse,
   Layers3,
   Microscope,
-  Network,
+  Droplets,
+  Wind,
+  Syringe,
+  Play,
   ShieldCheck,
-  Stethoscope,
-  Waves,
   ArrowRight,
 } from "lucide-react";
 import Header from "./components/Header";
@@ -22,23 +22,23 @@ import { Instagram } from "lucide-react";
 const features = [
   {
     icon: <Blocks />,
-    title: "Arquitectura modular",
-    text: "Componentes independientes e intercambiables que permiten adaptar cada configuración.",
+    title: "Del equipo al paciente",
+    text: "Entrenamiento que integra la operación de la tecnología con la lectura clínica, hemodinámica y sistémica.",
   },
   {
     icon: <Layers3 />,
-    title: "Diseño escalable",
-    text: "Una base tecnológica preparada para crecer desde escenarios neonatales hasta adultos.",
+    title: "Nacido desde enfermería",
+    text: "Creado desde la práctica asistencial para potenciar el reconocimiento temprano de signos y complicaciones.",
   },
   {
     icon: <HeartPulse />,
-    title: "Alta fidelidad",
-    text: "Escenarios orientados a la práctica clínica, el razonamiento y la respuesta del equipo.",
+    title: "Razonamiento en equipo",
+    text: "Un entorno seguro para entrenar decisiones, comunicación y respuesta coordinada bajo presión.",
   },
   {
     icon: <ShieldCheck />,
-    title: "Entrenamiento seguro",
-    text: "Práctica repetible en un entorno controlado, sin riesgo para pacientes.",
+    title: "Acceso a alta fidelidad",
+    text: "Una solución desarrollada íntegramente en Argentina para instituciones públicas y privadas.",
   },
 ];
 
@@ -46,45 +46,45 @@ const modules = [
   [
     "A",
     "Módulo maniquí",
-    "Unidad central de interacción clínica y soporte del escenario.",
+    "Silueta humana de interacción clínica y soporte del escenario, con tórax de silicona hiperrealista para la ventilación. Escalable para escenarios neonatales, pediátricos y adultos.",
   ],
   [
     "B",
     "Tablero de mando",
-    "Gestión de conexiones, control y variables del sistema.",
+    "Centro de gestión operativa que distribuye el fluido neumático e hídrico hacia cada sitio, para que la complicación planificada suceda donde corresponde.",
   ],
   [
     "C",
     "Impulsión hidráulica",
-    "Subsistema pensado para simulación de variables hemodinámicas.",
+    "Mueve el flujo hídrico en modo autónomo. Puede trabajar con ventilación manual o respirador, y hacerse bypass para integrarse a un equipo de ECMO real.",
   ],
   [
     "D",
     "Caja estructural",
-    "Contención organizada de módulos, conexiones y cableado.",
+    "Caja contenedora de unidades funcionales que ejecutan y materializan la complicación clínica definida para el entrenamiento.",
   ],
 ];
 
 const applications = [
   {
-    icon: <Waves />,
-    title: "Hemodinamia",
-    text: "Entrenamiento orientado al reconocimiento y manejo de variables hemodinámicas.",
+    icon: <Wind />,
+    title: "Talleres ventilatorios",
+    text: "Aspiración de secreciones, auscultación y reconocimiento visual o táctil de asimetrías en la ventilación.",
+  },
+  {
+    icon: <Droplets />,
+    title: "Monitoreo y procedimientos",
+    text: "Balance hídrico, domos de PVC y línea arterial, drenaje pleural, descompresión y pericardiocentesis.",
   },
   {
     icon: <Activity />,
-    title: "Ventilación asistida",
-    text: "Escenarios compatibles con prácticas vinculadas al soporte ventilatorio.",
+    title: "Hemodinamia crítica",
+    text: "Reconocimiento, monitoreo y manejo dinámico de variables hemodinámicas en pacientes críticos.",
   },
   {
-    icon: <Stethoscope />,
-    title: "Soporte vital avanzado",
-    text: "Simulación de escenarios clínicos críticos para práctica individual y en equipo.",
-  },
-  {
-    icon: <BrainCircuit />,
-    title: "Formación interdisciplinaria",
-    text: "Una plataforma para entrenamiento, debriefing y desarrollo de competencias.",
+    icon: <Syringe />,
+    title: "Soporte vital y ECMO",
+    text: "Circuitos simulados o conexión a equipos reales para estudiar fisiopatología y resolver complicaciones en tiempo real.",
   },
 ];
 
@@ -161,9 +161,34 @@ export default function App() {
           <div className="container">
             <SectionTitle
               eyebrow="El proyecto"
-              title="Una plataforma creada para aprender haciendo."
-              text="SIM-YArdi busca transformar la formación clínica mediante escenarios reproducibles, adaptables y de alta fidelidad, con foco en la medicina crítica."
+              title="Tecnología para entrenar hoy las decisiones que importan mañana."
+              text="Una plataforma argentina de simulación clínica que acerca la formación a lo que realmente ocurre al pie de la cama."
             />
+
+            <div className="project-story">
+              <article>
+                <h3>El vacío pedagógico: entre la teoría y la práctica</h3>
+                <p>
+                  En medicina crítica, especialmente ante soporte vital avanzado,
+                  terapias de reemplazo o asistencia extracorpórea (ECMO), la
+                  formación tradicional suele centrarse en operar el equipo. El
+                  desafío es también aprender a interpretar la evolución
+                  hemodinámica y sistémica del paciente y sus complicaciones
+                  reales.
+                </p>
+              </article>
+              <article>
+                <h3>Nacido desde la práctica de enfermería</h3>
+                <p>
+                  SIM-YArdi surge de una necesidad observada en el terreno
+                  asistencial: que quienes monitorean continuamente al paciente
+                  crítico puedan entrenar técnica, signos clínicos, respuestas
+                  hemodinámicas y complicaciones. Es una herramienta creada por
+                  profesionales de la salud para fortalecer el razonamiento
+                  clínico en equipo.
+                </p>
+              </article>
+            </div>
 
             <div className="feature-grid">
               {features.map((feature) => (
@@ -179,14 +204,15 @@ export default function App() {
               <div>
                 <span className="eyebrow">Visión</span>
                 <h3>
-                  Democratizar el acceso a la simulación clínica de alta
-                  fidelidad.
+                  De un propósito específico a una plataforma versátil.
                 </h3>
               </div>
               <p>
-                Una solución concebida para instituciones públicas y privadas,
-                con una arquitectura que prioriza adaptabilidad, mantenibilidad
-                y evolución tecnológica.
+                Su arquitectura descentralizada y modular permite entrenar
+                habilidades ventilatorias, auscultatorias y de visualización;
+                casos clínicos integrados; y escenarios avanzados de ECMO con
+                circuitos simulados o equipos reales. Una solución integral
+                argentina para democratizar la simulación de alta fidelidad.
               </p>
             </div>
           </div>
@@ -207,9 +233,9 @@ export default function App() {
               <span className="eyebrow light">Arquitectura del sistema</span>
               <h2>Descentralizada, modular y preparada para evolucionar.</h2>
               <p className="section-lead inverse-text">
-                Cada subsistema puede concebirse como una unidad funcional con
-                responsabilidades definidas, facilitando mantenimiento, pruebas
-                y futuras ampliaciones.
+                La independencia y adaptabilidad de sus componentes permite
+                configurar cada escenario según objetivos pedagógicos y clínicos
+                específicos, facilitando mantenimiento y escalabilidad.
               </p>
 
               <div className="module-list">
@@ -231,8 +257,8 @@ export default function App() {
           <div className="container">
             <SectionTitle
               eyebrow="Aplicaciones"
-              title="Pensado para escenarios clínicos de alta complejidad."
-              text="La plataforma puede convertirse en un soporte para prácticas técnicas, razonamiento clínico, coordinación de equipos y debriefing."
+              title="Versatilidad pedagógica para cada nivel de entrenamiento."
+              text="Desde prácticas de habilidades específicas hasta escenarios clínicos integrales de alta complejidad."
             />
 
             <div className="application-grid">
@@ -256,11 +282,11 @@ export default function App() {
 
             <div className="check-list">
               {[
-                "Configuraciones adaptables según el escenario.",
-                "Componentes independientes para facilitar mantenimiento.",
-                "Prácticas seguras, repetibles y observables.",
-                "Base escalable para nuevas capacidades.",
-                "Enfoque orientado a formación clínica y trabajo en equipo.",
+                "Operación neumática autónoma para prácticas respiratorias.",
+                "Circuitos hídrico y neumático integrados para destrezas de urgencia.",
+                "Escenarios de hemodinamia y respuesta crítica.",
+                "ECMO simulado o conectado a un equipo real.",
+                "Formación interdisciplinaria en un entorno seguro.",
               ].map((item) => (
                 <div className="check-item" key={item}>
                   <CheckCircle2 size={20} />
@@ -313,8 +339,8 @@ export default function App() {
 
               <figure>
                 <img
-                  src={`${import.meta.env.BASE_URL}assets/sim-yardi-componentes.jpg`}
-                  alt="Componentes del sistema SIM-YArdi"
+                  src={`${import.meta.env.BASE_URL}assets/validacion-clinica-equipo.jpeg`}
+                  alt="Equipo interdisciplinario durante la validación clínica de SIM-YArdi"
                   loading="lazy"
                   decoding="async"
                 />
@@ -322,12 +348,51 @@ export default function App() {
 
               <figure>
                 <img
-                  src={`${import.meta.env.BASE_URL}assets/sim-yardi-neonatal.jpg`}
-                  alt="Configuración neonatal SIM-YArdi"
+                  src={`${import.meta.env.BASE_URL}assets/validacion-clinica-maniqui.jpeg`}
+                  alt="SIM-YArdi durante una prueba clínica"
                   loading="lazy"
                   decoding="async"
                 />
               </figure>
+            </div>
+          </div>
+        </section>
+
+        <section id="investigacion" className="section validation-section">
+          <div className="container validation-grid">
+            <div className="validation-copy">
+              <span className="eyebrow">Validación clínica en proceso</span>
+              <h2>SIM-YArdi en evolución junto a equipos de referencia.</h2>
+              <p className="section-lead">
+                Iniciamos una etapa clave de co-evaluación con el Hospital de
+                Niños Sor María Ludovica de La Plata, coordinada con la dirección
+                del área de recuperación cardiovascular.
+              </p>
+              <p>
+                En mesas de trabajo interdisciplinarias —con enfermeros expertos
+                en ECMO, técnicos perfusionistas, ingenieros en simulación,
+                inventores y cirujanos pediatras— sometimos el simulador a
+                pruebas exigentes, incluida su primera conexión a un circuito de
+                ECMO real. Este intercambio permite detectar detalles, realizar
+                reajustes finos en los circuitos de presión y evolucionar desde
+                la práctica real.
+              </p>
+            </div>
+            <div className="validation-media">
+              <video
+                controls
+                muted
+                playsInline
+                preload="metadata"
+                poster={`${import.meta.env.BASE_URL}assets/validacion-clinica-poster.jpg`}
+                aria-label="Video de la validación clínica de SIM-YArdi"
+              >
+                <source src={`${import.meta.env.BASE_URL}assets/validacion-clinica.mp4`} type="video/mp4" />
+                Tu navegador no admite video HTML5.
+              </video>
+              <a className="video-link" href={`${import.meta.env.BASE_URL}assets/sim-yardi-ecmo.mp4`} target="_blank" rel="noreferrer">
+                <Play size={17} /> Ver demostración ECMO
+              </a>
             </div>
           </div>
         </section>
